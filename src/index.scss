@@ -1,24 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import './styles/base/_typography';
+
+
 html {
   padding: 0;
   margin: 0;
   font-weight: 400;
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-size: $font-size-base;
+  font-family: $font-family-base;
 }
-
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-* {
+*{
   box-sizing: border-box;
 }
-
-a {
+a{
   cursor: pointer;
   text-decoration: none;
 }
@@ -31,16 +30,14 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3rem; // 48px
   line-height: 1.1;
 }
-
-h2 {
-  font-size: 1.5rem;
+h2{
+  font-size: 1.5rem; // 24px
 }
-
-h3 {
-  font-size: 1.25rem;
+h3{
+  font-size: 1.25rem;  // 20px
 }
 
 button {
@@ -54,11 +51,9 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-
 button:hover {
   border-color: #646cff;
 }
-
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -76,5 +71,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
-/*# sourceMappingURL=index.css.map */
