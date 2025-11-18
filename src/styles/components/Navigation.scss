@@ -1,18 +1,18 @@
-@use '../base/_typography.scss' as typography;
+
+@use '../base/_color.scss' as color;
+
 .svg_size{
   height: 28px;
   width: 28px;
 }
 .nav{
-  //background-color: ;
-  padding: 5px 100px;
-  background-color:white;
+  background-color: color.$text-color-for-dark;
+  padding: 4px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   &__navigation{
-    // матрикс беписов
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -24,7 +24,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: typography.$font-size-main-text;
+      font-size: 1.25rem;
     }
     &-users{
       display: flex;
@@ -71,9 +71,9 @@
   }
 }
 
-// Mobile бургер меню (скрыто на больших экранах)
+
 .burger-btn {
-  display: none; // По умолчанию скрыто
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
@@ -126,7 +126,7 @@
 }
 
 .mobile-menu {
-  display: none; // По умолчанию скрыто
+  display: none;
   position: fixed;
   top: 0;
   right: -100%;
@@ -148,9 +148,8 @@
 
     li {
       margin-bottom: 15px;
-      opacity: 0;
-      transform: translateX(50px);
-      animation: slideIn 0.5s ease forwards;
+      opacity: 1;
+
 
       a {
         text-decoration: none;
@@ -171,7 +170,7 @@
 }
 
 .overlay {
-  display: none; // По умолчанию скрыто
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -189,10 +188,10 @@
   }
 }
 
-// Медиа-запрос для mobile
+
 @media (max-width: 1023px) {
   .nav{
-    padding: 10px 15px;
+    padding: 15px 15px;
   }
   .nav__navigation-users {
     display: none;
@@ -214,15 +213,8 @@
   }
 }
 
-// Анимации
-@keyframes slideIn {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
-// Адаптивность для очень маленьких экранов
+
 @media (max-width: 480px) {
   .mobile-menu {
     width: 100%;

@@ -1,9 +1,11 @@
 @use './styles/base/_typography' as typography;
+@use './styles/base/_color' as color;
 
 
 html {
   padding: 0;
   margin: 0;
+  background-color: color.$bg-color;
   font-weight: 400;
   width: 100%;
   font-size: typography.$font-size-base;
@@ -34,33 +36,32 @@ body {
 
 h1 {
   font-size: 3rem; // 48px
-  line-height: 1.1;
+  margin: 0;
 }
 h2{
   font-size: 1.5rem; // 24px
+  margin: 0;
 }
 h3{
   font-size: 1.25rem;  // 20px
+  margin: 0;
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+//button:focus,
+//button:focus-visible {
+//  outline: 4px auto -webkit-focus-ring-color;
+//}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -72,5 +73,21 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  html{
+    font-size: 14px;
+  }
+
+}
+@media screen and  (max-width: 768px) {
+  html{
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px; /* для мобильных */
   }
 }

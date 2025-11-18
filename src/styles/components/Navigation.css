@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .svg_size {
   height: 28px;
   width: 28px;
 }
 
 .nav {
-  padding: 5px 100px;
-  background-color: white;
+  background-color: #FFFFFF;
+  padding: 4px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,9 +120,7 @@
 }
 .mobile-menu nav ul li {
   margin-bottom: 15px;
-  opacity: 0;
-  transform: translateX(50px);
-  animation: slideIn 0.5s ease forwards;
+  opacity: 1;
 }
 .mobile-menu nav ul li a {
   text-decoration: none;
@@ -159,7 +156,7 @@
 
 @media (max-width: 1023px) {
   .nav {
-    padding: 10px 15px;
+    padding: 15px 15px;
   }
   .nav__navigation-users {
     display: none;
@@ -175,12 +172,6 @@
   }
   .overlay {
     display: block;
-  }
-}
-@keyframes slideIn {
-  to {
-    opacity: 1;
-    transform: translateX(0);
   }
 }
 @media (max-width: 480px) {
