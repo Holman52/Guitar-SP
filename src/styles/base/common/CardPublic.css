@@ -1,5 +1,53 @@
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #2A2A2A;
+}
+
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .guitar-service {
+  width: 340px;
+  background-color: #F0F0F0;
   position: relative;
+  z-index: 2;
+}
+.guitar-service__count {
+  position: absolute;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 2rem;
+  color: #FFFFFF;
+  font-weight: 800;
+  background-image: url("/public/mediatrLI.png");
+  top: -60px;
+  left: -60px;
+  width: 80px;
+  height: 85px;
+  z-index: 1;
+}
+.guitar-service__text {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  border-radius: 10px;
+  border: 1px solid #f50000;
+  z-index: 3;
+  background-color: #FFFFFF;
 }
 
 /*# sourceMappingURL=CardPublic.css.map */
