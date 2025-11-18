@@ -1,15 +1,17 @@
-@import './styles/base/_typography';
+@use './styles/base/_typography' as typography;
 
 
 html {
   padding: 0;
   margin: 0;
   font-weight: 400;
-  font-size: $font-size-base;
-  font-family: $font-family-base;
+  width: 100%;
+  font-size: typography.$font-size-base;
+  font-family: typography.$font-family-base;
 }
-:root {
+#root {
   font-synthesis: none;
+  width: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,13 +22,14 @@ html {
 a{
   cursor: pointer;
   text-decoration: none;
+  color: inherit;
 }
 
 body {
+  width: 100%;
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
 }
 
 h1 {

@@ -1,10 +1,9 @@
-import Navigation from "../components/navigation/Navigation.jsx";
+import Navigation from "../components/Navigation.jsx";
 
 const Main = () => {
     return (
-        <div>
             <Navigation />
-        </div>
+
     )
 }
 export default Main

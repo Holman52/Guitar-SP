@@ -3,12 +3,14 @@ html {
   padding: 0;
   margin: 0;
   font-weight: 400;
+  width: 100%;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
 }
 
-:root {
+#root {
   font-synthesis: none;
+  width: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -21,13 +23,14 @@ html {
 a {
   cursor: pointer;
   text-decoration: none;
+  color: inherit;
 }
 
 body {
+  width: 100%;
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
 }
 
 h1 {
