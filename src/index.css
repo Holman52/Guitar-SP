@@ -35,6 +35,11 @@ body {
   place-items: center;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-size: 3rem;
   margin: 0;

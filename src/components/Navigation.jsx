@@ -81,7 +81,7 @@ const Navigation = () => {
                     <>
                         <button
                             className={`burger-btn ${isOpen ? 'open' : ''}`}
-                            onClick={toggleMenu}
+                            onClick={toggleMenu}тзь
                         >
                             <span></span>
                             <span></span>

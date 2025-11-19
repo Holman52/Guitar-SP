@@ -33,7 +33,10 @@ body {
   display: flex;
   place-items: center;
 }
-
+p{
+  margin: 0;
+  padding: 0;
+}
 h1 {
   font-size: 3rem; // 48px
   margin: 0;
@@ -91,3 +94,4 @@ button:hover {
     font-size: 12px; /* для мобильных */
   }
 }
+

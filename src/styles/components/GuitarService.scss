@@ -1,0 +1,62 @@
+@use '../base/_color.scss' as color;
+.service-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  background-color: color.$primary-color;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__header{
+    font-size: 3rem;
+    color: color.$secondary-color;
+  }
+  &__flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+.service-item{
+  height: auto;
+  display: flex;
+  width: calc(100% - 50px);
+  justify-content: center;
+  align-items: end;
+  border-radius: 10px;
+}
+.service{
+  width: 950px;
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  gap: 8px;
+}
+@media screen and (max-width: 1024px) {
+
+    .service {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      gap: 8px;
+      width: 500px;
+    }
+
+
+}
+@media screen and (max-width: 576px) {
+
+  .service {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    width: 300px;
+  }
+
+
+}
