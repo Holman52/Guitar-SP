@@ -47,10 +47,23 @@
     width: 500px;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 577px) and (max-width: 1023px) {
+  .service {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 167px 96px 199px 108px 205px 108px;
+    gap: 8px;
+    width: 500px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
   .service {
     width: 900px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 162px 100px 174px 100px 180px 100px;
   }
+}
+@media screen and (max-width: 1440px) {
   .main-service {
     font-size: 1.125rem;
   }
@@ -59,7 +72,7 @@
   .service {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 205px 148px 200px 178px 256px 200px;
+    grid-template-rows: 205px 96px 200px 125px 275px 146px;
     gap: 8px;
     width: 320px;
   }

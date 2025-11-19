@@ -3,7 +3,7 @@ import '../styles/components/GuitarService.scss'
 const GuitarService = () => {
     const data = [
         {
-            header: "Бесплатная пожизненная настройка гитары",
+            header: "Бесплатная пожизненная настройка",
             title: "ваше идеальное звучание начинается здесь и сейчас",
             display: '',
             service: '',
@@ -27,7 +27,7 @@ const GuitarService = () => {
             count: "1"
         },
         {
-            header: "Подберём идеальную гитару именно для вас",
+            header: "Подберём идеальный интрумент именно для вас",
             title: "",
             display: 'none',
             service: 'main-service',
@@ -52,7 +52,7 @@ const GuitarService = () => {
         },
         {
             header: "Только проверенные бренды",
-            title: "мы сами тестируем каждую гитару перед продажей",
+            title: "мы сами тестируем каждый интрумент перед продажей",
             display: '',
             service: '',
             class:'div7',
