@@ -6,27 +6,31 @@ const GuitarService = () => {
             header: "Бесплатная пожизненная настройка гитары",
             title: "ваше идеальное звучание начинается здесь и сейчас",
             display: '',
+            service: '',
             class:'div1',
-            count: "01"
+            count: "6"
         },
         {
-            header: "Экспертная консультация от музыкантов",
-            title: "помогут подобрать инструмент менно под ваш стиль и уровень",
+            header: "Экспертная консультация",
+            title: "Проконсультируем перед покупкой",
             display: '',
+            service: '',
             class:'div2',
-            count: "02"
+            count: "2"
         },
         {
             header: "Гарантия лучшей цены",
-            title: "возможность торговли-in вашего старого инструмента",
+            title: "возможность обмена в trade-in",
             display: '',
+            service: '',
             class:'div3',
-            count: "03"
+            count: "1"
         },
         {
-            header: "Профессиональный подбор и setup гитары под вас",
+            header: "Подберём идеальную гитару именно для вас",
             title: "",
             display: 'none',
+            service: 'main-service',
             class:'div4',
             count: <img alt='dddadsads' src='/public/guitar-service.png' />
         },
@@ -35,6 +39,7 @@ const GuitarService = () => {
             title: "",
             display: 'none',
             class:'div5',
+            service: 'main-service',
             count:  <img alt='dddadsads' src='/public/Coins.png' />
         },
         {
@@ -42,28 +47,32 @@ const GuitarService = () => {
             title: "",
             display: 'none',
             class:'div6',
+            service: 'main-service',
             count:  <img alt='dddadsads' src='/public/Delivery.png' />
         },
         {
-            header: "Только проверенные бренды и отборные экземпляры",
+            header: "Только проверенные бренды",
             title: "мы сами тестируем каждую гитару перед продажей",
             display: '',
+            service: '',
             class:'div7',
-            count: "04"
+            count: "4"
         },
         {
             header: "Расширенная гарантия 3 года",
             title: "сервисное обслуживание в подарок к любой покупке",
             display: '',
             class:'div8',
-            count: "05"
+            service: '',
+            count: "5"
         },
         {
             header: "Гибкие варианты рассрочки",
             title: "без переплат, чтобы музыка была доступна каждому",
             display: '',
             class:'div9',
-            count: '06'
+            service: '',
+            count: '3'
         },
     ];
     return (
@@ -75,6 +84,7 @@ const GuitarService = () => {
                     <div className={`service-item ${item.class}`}>
                 <CardPublic
                     class={item.class}
+                    service={item.service}
                     header={item.header}
                     title={item.title}
                     display={item.display}
