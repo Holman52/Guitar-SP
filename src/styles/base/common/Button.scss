@@ -1,6 +1,6 @@
 @use '../../base/_common.scss' as common;
 @use '../../base/_color.scss' as color;
-@use '../../base/_typography.scss' as typography;
+
 .btn{
   background-color: color.$secondary-color;
   color: color.$text-color-for-dark;

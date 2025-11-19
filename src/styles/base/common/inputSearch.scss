@@ -10,7 +10,6 @@
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;;
-
 }
 input:focus{
   outline: none;
@@ -20,6 +19,7 @@ input:focus{
 }
 .search-input-container{
   padding: common.$padding-10;
+  border: 1px solid #B2B2B2;
   border-radius: 10px;
   display: flex;
   background-color: color.$text-color-for-dark;

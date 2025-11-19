@@ -1,0 +1,80 @@
+.custom-select {
+  position: relative;
+  width: 220px;
+  display: inline-block;
+}
+.custom-select .select-element {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  padding: 13px 44px 13px 16px;
+  background: #2A2A2A;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: WHITE;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.custom-select .select-element::-ms-expand {
+  display: none;
+}
+.custom-select .select-element:hover {
+  border-color: #4299e1;
+  box-shadow: 0 2px 8px rgba(66, 153, 225, 0.15);
+}
+.custom-select .select-element:focus {
+  border-color: #4299e1;
+  box-shadow: 0 2px 12px rgba(66, 153, 225, 0.2);
+}
+.custom-select .select-element option {
+  padding: 12px;
+  background: #2A2A2A;
+  color: #FFFFFF;
+  font-size: 1.125rem;
+}
+.custom-select .select-element option:hover {
+  background: #f7fafc;
+}
+.custom-select .select-element option:checked {
+  background: #ebf8ff;
+  color: #2b6cb0;
+}
+.custom-select .select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #fcfcfc;
+  transition: transform 0.3s ease;
+}
+.custom-select .select-arrow svg {
+  display: block;
+}
+.custom-select .select-element:focus + .select-arrow {
+  color: #4299e1;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.select-element:valid {
+  color: white;
+}
+.select-element:invalid {
+  color: #a0aec0;
+}
+
+@media (max-width: 768px) {
+  .custom-select {
+    width: 100%;
+    max-width: 280px;
+  }
+  .custom-select .select-element {
+    padding: 14px 44px 14px 16px;
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=Selection.css.map */

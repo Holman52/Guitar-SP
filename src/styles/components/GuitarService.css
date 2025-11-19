@@ -50,6 +50,7 @@
 @media screen and (min-width: 577px) and (max-width: 1023px) {
   .service {
     display: grid;
+    margin-top: 30px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 167px 96px 199px 108px 205px 108px;
     gap: 8px;
@@ -59,6 +60,7 @@
 @media screen and (min-width: 1025px) and (max-width: 1439px) {
   .service {
     width: 900px;
+    margin-top: 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 162px 100px 174px 100px 180px 100px;
   }
@@ -72,9 +74,10 @@
   .service {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 205px 96px 200px 125px 275px 146px;
+    grid-template-rows: 198px 96px 193px 125px 275px 119px;
     gap: 8px;
     width: 320px;
+    margin-top: 20px;
   }
 }
 

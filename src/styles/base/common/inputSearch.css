@@ -18,6 +18,7 @@ input:focus {
 
 .search-input-container {
   padding: 10px;
+  border: 1px solid #B2B2B2;
   border-radius: 10px;
   display: flex;
   background-color: #FFFFFF;

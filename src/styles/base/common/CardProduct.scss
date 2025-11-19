@@ -1,0 +1,127 @@
+@use '../../base/_common.scss' as common;
+@use '../../base/_color.scss' as color;
+.card{
+  display: flex;
+  width: 272px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: common.$padding-10;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    background-color: rgba(color.$secondary-color, 0.02);
+  }
+  &-text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    font-size: 1.25rem;
+    gap: 10px;
+    width: 100%;
+    height: 102px;
+    font-weight: 600;
+    &__header{
+      color: color.$secondary-color;
+    }
+  }
+  &-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    &__product{
+      font-size: 1rem;
+      width: auto;
+      padding: common.$padding-10 17px;
+      background-color: color.$bg-color;
+      border: 1px solid color.$secondary-color;
+      color: color.$text-color-desc;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      overflow: hidden;
+      &:hover {
+        background-color: color.$secondary-color;
+        color: color.$bg-color;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      // Анимация при нажатии
+      &:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.1s ease;
+      }
+
+      // Эффект пульсации
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(color.$secondary-color, 0.3);
+        transform: translate(-50%, -50%);
+        transition: width 0.3s ease, height 0.3s ease;
+      }
+
+      &:active::after {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    &__buy{
+      width: auto;
+      font-size: 1rem;
+      padding: common.$padding-10 common.$padding-20;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      position: relative;
+      overflow: hidden;
+      &:hover {
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 6px 20px rgba(color.$secondary-color, 0.4);
+        background: linear-gradient(45deg, darken(color.$secondary-color, 5%), darken(color.$secondary-color, 15%));
+      }
+
+      // Анимация при нажатии
+      &:active {
+        transform: translateY(0) scale(1);
+        box-shadow: 0 2px 8px rgba(color.$secondary-color, 0.3);
+        transition: all 0.1s ease;
+      }
+
+      // Эффект блеска
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+                        90deg,
+                        transparent,
+                        rgba(255, 255, 255, 0.4),
+                        transparent
+        );
+        transition: left 0.5s ease;
+      }
+
+      &:hover::before {
+        left: 100%;
+      }
+
+
+    }
+  }
+}
