@@ -30,7 +30,7 @@ const Navigation = () => {
 
     const menuItems = [
         { label: 'Каталог', href: '/catalog', id: 1 },
-        { label: 'Хит продаж', href: '/about', id: 2 },
+        { label: 'Хит продаж', href: '/', id: 2 },
         { label: 'О нас', href: '/services', id: 3 },
         { label: 'Контакты', href: '/contact', id: 4 },
         { label: 'Избранное', href: '/home', id: 5 },
@@ -45,9 +45,9 @@ const Navigation = () => {
                 <img src="#" alt="logo" className="nav__navigation-logo" />
                 <div className="nav__navigation-links">
                     <a href="/catalog" className='link-router'>Каталог</a>
-                    <a href="#" className='link-router'>Хит продаж</a>
-                    <a href="#" className='link-router'>О нас</a>
-                    <a href="#" className='link-router'>Контакты</a>
+                    <a href="/" className='link-router'>Хит продаж</a>
+                    <a href="" className='link-router'>О нас</a>
+                    <a href="/contact" className='link-router'>Контакты</a>
                 </div>
                 <div className="nav__navigation-users">
                     <a href="" className='nav__navigation-users-link'>
@@ -92,7 +92,7 @@ const Navigation = () => {
                             <nav>
                                 <ul>
                                     {menuItems.map((item, index) => (
-                                        <li key={item.href}>
+                                        <li key={item.id}>
                                             <a
                                                 href={item.href}
                                                 onClick={() => setIsOpen(false)}

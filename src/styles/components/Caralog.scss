@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px;
+  padding: 50px;
   flex-direction: column;
   max-width: 100%;
   @media screen and (max-width: 767px){
@@ -14,8 +14,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-
   }
+
 }
 .catalog{
   display: flex;
@@ -25,6 +25,9 @@
   flex-direction: column;
   max-width: 1185px;
   width: 90%;
+  &-header{
+    color: color.$secondary-color;
+  }
   &-filters{
     display: flex;
     justify-content: space-between;

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px;
+  padding: 50px;
   flex-direction: column;
   max-width: 100%;
 }
@@ -26,6 +26,9 @@
   flex-direction: column;
   max-width: 1185px;
   width: 90%;
+}
+.catalog-header {
+  color: #FF0909;
 }
 .catalog-filters {
   display: flex;
