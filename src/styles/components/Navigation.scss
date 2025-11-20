@@ -8,6 +8,8 @@
 .nav{
   background-color: color.$text-color-for-dark;
   padding: 4px 100px;
+  position: fixed;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,4 +1,3 @@
-import Filter from "./common/Filter.jsx";
 import InputSearch from "./common/inputSearch.jsx";
 import Selection from "./common/Selection.jsx";
 import '/src/styles/base/common/Selection.scss'
@@ -132,18 +131,19 @@ const Catalog = () => {
                    </button>
                ))}
            </div>
+           <div className="popular-brends">
+               <h1 className="popular-brends__header">Популярные бренды</h1>
+               <div className='popular-brends__content'>
+                   {logo.map((item) => (
+                       <ImgScroll
+                           key={item.id}
+                           path={item.path}
+                       />
+                   ))}
+               </div>
+           </div>
        </div>
-            <div className="popular-brends">
-                <h1 className="popular-brends__header">Популярные бренды</h1>
-                <div className='popular-brends__content'>
-                    {logo.map((item) => (
-                        <ImgScroll
-                            key={item.id}
-                            path={item.path}
-                        />
-                    ))}
-                </div>
-            </div>
+
         </div>
     )
 }

@@ -6,6 +6,11 @@
   flex-direction: column;
   max-width: 100%;
 }
+@media screen and (max-width: 767px) {
+  .catalog-container {
+    padding: 20px;
+  }
+}
 .catalog-container-filters {
   display: flex;
   justify-content: center;
@@ -27,6 +32,21 @@
   justify-content: space-between;
   width: 100%;
 }
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .catalog-filters {
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .catalog-filters {
+    flex-direction: column;
+    gap: 5px;
+    align-items: end;
+  }
+  .catalog-filters .catalog-filters__search {
+    width: 100%;
+  }
+}
 .catalog-filters__search {
   width: 55%;
 }
@@ -39,6 +59,19 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .catalog-body {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .catalog-body {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+  }
 }
 
 .count-pages {
@@ -71,6 +104,18 @@
 }
 .count-pages__number:active.count-pages__number--active {
   transform: scale(1.05);
+}
+
+.popular-brends {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+}
+.popular-brends__content {
+  display: flex;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=Caralog.css.map */

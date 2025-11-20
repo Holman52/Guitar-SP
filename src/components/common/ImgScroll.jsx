@@ -1,9 +1,12 @@
- const ImgScroll = (props) => {
+
+import '../../styles/base/common/ImgScroll.scss'
+const ImgScroll = (props) => {
     return (
-        <div>
+        <div className='popular-brends__block'>
                 <img
                     src={`${props.path}.webp`}
                     alt="Адаптивное изображение"
+                    className="popular-brends__img"
                     loading="lazy"
                 />
         </div>
