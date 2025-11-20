@@ -60,15 +60,15 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
 }
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 814px) and (max-width: 1439px) {
   .catalog-body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 5px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 813px) {
   .catalog-body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -115,6 +115,9 @@
   width: 100%;
   margin-top: 50px;
   position: relative;
+}
+.popular-brends__header {
+  font-size: 2rem;
 }
 .popular-brends__content {
   display: flex;

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/components/Contact.scss'
-function ContactComponent(props) {
+function ContactComponent() {
     return (
         <div className="contact">
             <h1 className='contact-header'>Контакты</h1>
