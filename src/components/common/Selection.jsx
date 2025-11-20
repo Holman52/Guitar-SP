@@ -1,6 +1,6 @@
 import {useState} from "react";
 const Selection = () => {
-    const [selectedValue, setSelectedValue] = useState('all');
+    const [selectedValue, setSelectedValue] = useState('guitars');
 
     const handleChange = (event) => {
         setSelectedValue(event.target.value);
@@ -13,7 +13,9 @@ const Selection = () => {
                 value={selectedValue}
                 onChange={handleChange}
                 className="select-element"
+                defaultValue={'guitars'}
             >
+
                 <option value="all">Все товары</option>
                 <option value="guitars">Гитары</option>
                 <option value="drums">Барабаны</option>

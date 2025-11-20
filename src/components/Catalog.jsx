@@ -48,7 +48,7 @@ const Catalog = () => {
             id: 6,
             name: 'SQUIER MM Stratocaster Black',
             price: '17 900₽',
-            image:  '/src/assets/belucci'
+            image:  '/src/assets/squire'
         },
         {
             id: 7,
@@ -60,7 +60,7 @@ const Catalog = () => {
             id: 8,
             name: 'Martin Guitars LX1 Little Martin',
             price: '39 900₽',
-            image:  '/src/assets/belucci'
+            image:  '/src/assets/martin'
         }
     ];
     const logo = [
