@@ -1,0 +1,35 @@
+@use '../base/_color.scss' as color;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-header{
+    color: color.$secondary-color;
+  }
+  &-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    &__desc{
+      font-size: 2rem;
+    }
+  }
+}
+#map{
+  width: 600px;
+  height: 500px;
+  background-color: red;
+}

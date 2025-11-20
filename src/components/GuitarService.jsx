@@ -78,7 +78,7 @@ const GuitarService = () => {
     return (
         <div className="service-container">
             <div className="service-container__flex">
-                <h1 className="service-container__header">Почему именно мы ?</h1>
+                <h1 className="service-container__header">Почему именно мы?</h1>
             <div className="service">
                 {data.map((item) => (
                     <div className={`service-item ${item.class}`}>

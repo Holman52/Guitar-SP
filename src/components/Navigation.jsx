@@ -29,13 +29,13 @@ const Navigation = () => {
     }, [isMobile]);
 
     const menuItems = [
-        { label: 'Каталог', href: '#home' },
-        { label: 'Хит продаж', href: '#about' },
-        { label: 'О нас', href: '#services' },
-        { label: 'Контакты', href: '#contact' },
-        { label: 'Избранное', href: '#home' },
-        { label: 'Корзина', href: '#about' },
-        { label: 'Профиль', href: '#services' },
+        { label: 'Каталог', href: '/catalog', id: 1 },
+        { label: 'Хит продаж', href: '/about', id: 2 },
+        { label: 'О нас', href: '/services', id: 3 },
+        { label: 'Контакты', href: '/contact', id: 4 },
+        { label: 'Избранное', href: '/home', id: 5 },
+        { label: 'Корзина', href: '/about', id: 6 },
+        { label: 'Профиль', href: '/services',id: 7 },
 
     ];
 
@@ -44,7 +44,7 @@ const Navigation = () => {
             <nav className="nav__navigation">
                 <img src="#" alt="logo" className="nav__navigation-logo" />
                 <div className="nav__navigation-links">
-                    <a href="#" className='link-router'>Каталог</a>
+                    <a href="/catalog" className='link-router'>Каталог</a>
                     <a href="#" className='link-router'>Хит продаж</a>
                     <a href="#" className='link-router'>О нас</a>
                     <a href="#" className='link-router'>Контакты</a>
@@ -81,7 +81,7 @@ const Navigation = () => {
                     <>
                         <button
                             className={`burger-btn ${isOpen ? 'open' : ''}`}
-                            onClick={toggleMenu}тзь
+                            onClick={toggleMenu}
                         >
                             <span></span>
                             <span></span>

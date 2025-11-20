@@ -5,8 +5,6 @@ import '../../styles/base/common/CardPublic.scss'
 
 const GuitarService = (props) => {
     return (
-
-
            <div className={`guitar-service ${props.class}`}>
                <div className="guitar-service__count">{props.count}</div>
                <div className="guitar-service__text">

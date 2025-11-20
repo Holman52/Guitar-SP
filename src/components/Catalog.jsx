@@ -89,7 +89,7 @@ const Catalog = () => {
             path:'/src/assets/logo-fender'
         },
         {
-            id:1,
+            id:7,
             path:'/src/assets/logo-dunlup'
         }
     ]
@@ -103,10 +103,8 @@ const Catalog = () => {
                    <InputSearch
                        placeholder="Поиск гитар, усилителей..." />
                </div>
-               <div lassName="catalog-filters__select">
                     <Selection>
                     </Selection>
-               </div>
            </div>
            <div className="catalog-body">
                {guitars.map((item) => (
@@ -140,6 +138,13 @@ const Catalog = () => {
                            path={item.path}
                        />
                    ))}
+                   {logo.map((item) => (
+                       <ImgScroll
+                           key={item.id}
+                           path={item.path}
+                       />
+                   ))}
+
                </div>
            </div>
        </div>

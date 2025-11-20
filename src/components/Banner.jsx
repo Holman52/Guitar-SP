@@ -3,10 +3,13 @@ import '../styles/components/Banner.scss'
 import Button from "./common/Button.jsx";
 import InputSearch from './common/inputSearch.jsx';
 import navigation from "./Navigation.jsx";
+import {useNavigate} from "react-router-dom";
+
 const Banner = () => {
+    const navigate = useNavigate()
     const handleClickButton = (e) => {
-        navigation.navigate('klkk');
         e.preventDefault();
+        navigate('/catalog');
 
     }
     return (
