@@ -66,31 +66,31 @@ const Catalog = () => {
     const logo = [
         {
             id:1,
-            path:'/src/assets/logo-yamaha'
+            path:'assets/logo-yamaha'
         },
         {
             id:2,
-            path:'/src/assets/logo-squier'
+            path:'assets/logo-squier'
         },
         {
             id:3,
-            path:'/src/assets/logo-roland'
+            path:'assets/logo-roland'
         },
         {
             id:4,
-            path:'/src/assets/logo-martin'
+            path:'assets/logo-martin'
         },
         {
             id:5,
-            path:'/src/assets/logo-ibanez'
+            path:'assets/logo-ibanez'
         },
         {
             id:6,
-            path:'/src/assets/logo-fender'
+            path:'assets/logo-fender'
         },
         {
             id:7,
-            path:'/src/assets/logo-dunlup'
+            path:'assets/logo-dunlup'
         }
     ]
 

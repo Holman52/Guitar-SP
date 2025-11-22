@@ -29,13 +29,13 @@ const Navigation = () => {
     }, [isMobile]);
 
     const menuItems = [
-        { label: 'Каталог', href: '/catalog', id: 1 },
-        { label: 'Хит продаж', href: '/', id: 2 },
-        { label: 'О нас', href: '/about', id: 3 },
-        { label: 'Контакты', href: '/contact', id: 4 },
-        { label: 'Избранное', href: '/home', id: 5 },
-        { label: 'Корзина', href: '/services', id: 6 },
-        { label: 'Профиль', href: '/services',id: 7 },
+        { label: 'Каталог', href: '#/catalog', id: 1 },
+        { label: 'Хит продаж', href: '#/', id: 2 },
+        { label: 'О нас', href: '#/about', id: 3 },
+        { label: 'Контакты', href: '#/contact', id: 4 },
+        { label: 'Избранное', href: '#/', id: 5 },
+        { label: 'Корзина', href: '#/', id: 6 },
+        { label: 'Профиль', href: '#/',id: 7 },
 
     ];
 
