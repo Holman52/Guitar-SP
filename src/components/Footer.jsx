@@ -15,9 +15,9 @@ const Footer = () => {
                 <nav className="footer-content">
                     <p className='footer-header'>Навигация</p>
                     <ul className='footer-text'>
-                        <li className='footer-text__desc'><Link to="Guitar-SP/#/сatolog">Каталог</Link></li>
-                        <li className='footer-text__desc'><Link to="Guitar-SP/#/about">О нас</Link></li>
-                        <li className='footer-text__desc'><Link to="Link/contact">Контакты</Link></li>
+                        <li className='footer-text__desc'><Link to="/сatolog">Каталог</Link></li>
+                        <li className='footer-text__desc'><Link to="/about">О нас</Link></li>
+                        <li className='footer-text__desc'><Link to="L/contact">Контакты</Link></li>
                     </ul>
                 </nav>
                 <div className="footer-content">

@@ -30,13 +30,13 @@ const Navigation = () => {
     }, [isMobile]);
 
     const menuItems = [
-        { label: 'Каталог', href: 'Guitar-SP/#/catalog', id: 1 },
-        { label: 'Хит продаж', href: 'Guitar-SP/#/', id: 2 },
-        { label: 'О нас', href: 'Guitar-SP/#/about', id: 3 },
-        { label: 'Контакты', href: 'Guitar-SP/#/contact', id: 4 },
-        { label: 'Избранное', href: 'Guitar-SP/#/', id: 5 },
-        { label: 'Корзина', href: 'Guitar-SP/#/', id: 6 },
-        { label: 'Профиль', href: 'Guitar-SP/#/',id: 7 },
+        { label: 'Каталог', href: '/catalog', id: 1 },
+        { label: 'Хит продаж', href: '/', id: 2 },
+        { label: 'О нас', href: '/about', id: 3 },
+        { label: 'Контакты', href: '/contact', id: 4 },
+        { label: 'Избранное', href: '/', id: 5 },
+        { label: 'Корзина', href: '/', id: 6 },
+        { label: 'Профиль', href: '/',id: 7 },
 
     ];
 
@@ -73,10 +73,10 @@ const Navigation = () => {
                 </svg>
 
                 <div className="nav__navigation-links">
-                    <Link to="Guitar-SP/#/catalog"><p  className='link-router'>Каталог</p></Link>
-                    <Link to="Guitar-SP/#/"><p  className='link-router'>Хит продаж</p></Link>
-                    <Link to="Guitar-SP/#/about"><p  className='link-router'>О нас</p></Link>
-                    <Link to="Guitar-SP/#/contact"><p  className='link-router'>Контакты</p></Link>
+                    <Link to="/catalog"><p  className='link-router'>Каталог</p></Link>
+                    <Link to="/"><p  className='link-router'>Хит продаж</p></Link>
+                    <Link to="/about"><p  className='link-router'>О нас</p></Link>
+                    <Link to="/contact"><p  className='link-router'>Контакты</p></Link>
                 </div>
                 <div className="nav__navigation-users">
                     <a href="" className='nav__navigation-users-link'>
