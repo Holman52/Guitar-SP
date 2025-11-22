@@ -1,4 +1,4 @@
-import {HashRouter, Routes, Route, BrowserRouter} from "react-router-dom";
+import {HashRouter, Routes, Route} from "react-router-dom";
 import './App.scss'
 import Main from "./Pages/Main.jsx";
 import CatalogMain from "./Pages/CatalogMain.jsx";
@@ -8,14 +8,14 @@ import About from "./Pages/About.jsx";
 function App() {
 
   return (
-      <BrowserRouter>
+      <HashRouter>
           <Routes>
               <Route path="/" element={<Main />} />
               <Route path="/catalog" element={<CatalogMain />} />
               <Route path="/contact" element={<Contact />} />
               <Route path='/about' element={<About />} />
           </Routes>
-      </BrowserRouter>
+      </HashRouter>
   )
 }
 
