@@ -1,4 +1,5 @@
 import '/src/styles/components/Navigation.scss'
+import {Link} from "react-router-dom";
 import {useEffect, useState} from "react";
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -72,10 +73,10 @@ const Navigation = () => {
                 </svg>
 
                 <div className="nav__navigation-links">
-                    <router-link to="#/catalog"><p  className='link-router'>Каталог</p></router-link>
-                    <router-link to="#/"><p  className='link-router'>Хит продаж</p></router-link>
-                    <router-link to="#/about"><p  className='link-router'>О нас</p></router-link>
-                    <router-link to="#/contact"><p  className='link-router'>Контакты</p></router-link>
+                    <Link to="/catalog"><p  className='link-router'>Каталог</p></Link>
+                    <Link to="/"><p  className='link-router'>Хит продаж</p></Link>
+                    <Link to="/about"><p  className='link-router'>О нас</p></Link>
+                    <Link to="/contact"><p  className='link-router'>Контакты</p></Link>
                 </div>
                 <div className="nav__navigation-users">
                     <a href="" className='nav__navigation-users-link'>
@@ -121,13 +122,13 @@ const Navigation = () => {
                                 <ul>
                                     {menuItems.map((item, index) => (
                                         <li key={item.id}>
-                                            <a
-                                                href={item.href}
+                                            <Link
+                                                to={item.href}
                                                 onClick={() => setIsOpen(false)}
                                                 style={{ animationDelay: `${index * 0.1}s` }}
                                             >
                                                 {item.label}
-                                            </a>
+                                            </Link>
                                         </li>
                                     ))}
                                 </ul>
