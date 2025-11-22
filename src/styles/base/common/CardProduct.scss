@@ -106,7 +106,6 @@
       &:hover {
         transform: translateY(-2px) scale(1.05);
         box-shadow: 0 6px 20px rgba(color.$secondary-color, 0.4);
-        background: linear-gradient(45deg, darken(color.$secondary-color, 5%), darken(color.$secondary-color, 15%));
       }
 
       // Анимация при нажатии

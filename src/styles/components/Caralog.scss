@@ -90,7 +90,6 @@
       box-shadow: 0 6px 15px rgba(color.$secondary-color, 0.3);
 
       &:hover {
-        background-color: darken(color.$secondary-color, 10%);
         transform: scale(1.1) translateY(-2px);
       }
     }

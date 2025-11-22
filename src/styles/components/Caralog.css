@@ -100,7 +100,6 @@
   box-shadow: 0 6px 15px rgba(255, 9, 9, 0.3);
 }
 .count-pages__number--active:hover {
-  background-color: #d50000;
   transform: scale(1.1) translateY(-2px);
 }
 .count-pages__number:active {
