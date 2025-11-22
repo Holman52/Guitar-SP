@@ -18,49 +18,49 @@ const Catalog = () => {
             id: 1,
             name: 'Ibanez Gio GRG17ODX Black Night',
             price: '37 000₽',
-            image: '/src/assets/ibanez-gio'
+            image: 'assets/ibanez-gio'
         },
         {
             id: 2,
             name: 'Belucci 3810 N',
             price: '7 900₽',
-            image: '/src/assets/belucci'
+            image: 'assets/belucci'
         },
         {
             id: 3,
             name: 'Yamaha F310',
             price: '18 990₽',
-            image: '/src/assets/yamaha-f310'
+            image: 'assets/yamaha-f310'
         },
         {
             id: 4,
             name: 'Fender CD-60 Black',
             price: '24 000₽',
-            image: '/src/assets/fender-cd'
+            image: 'assets/fender-cd'
         },
         {
             id: 5,
             name: 'Yamaha FG800',
             price: '44 990₽',
-            image: '/src/assets/yamaha-fg'
+            image: 'assets/yamaha-fg'
         },
         {
             id: 6,
             name: 'SQUIER MM Stratocaster Black',
             price: '17 900₽',
-            image:  '/src/assets/squire'
+            image:  'assets/squire'
         },
         {
             id: 7,
             name: 'Cort MR Series',
             price: '39 900₽',
-            image: '/src/assets/cort-mr'
+            image: 'assets/cort-mr'
         },
         {
             id: 8,
             name: 'Martin Guitars LX1 Little Martin',
             price: '39 900₽',
-            image:  '/src/assets/martin'
+            image:  'assets/martin'
         }
     ];
     const logo = [

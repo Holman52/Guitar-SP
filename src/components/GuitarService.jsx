@@ -32,7 +32,7 @@ const GuitarService = () => {
             display: 'none',
             service: 'main-service',
             class:'div4',
-            count: <img alt='dddadsads' src='/public/guitar-service.png' />
+            count: <img alt='dddadsads' src='guitar-service.png' />
         },
         {
             header: "Выгодные цены и бонусы для постоянных клиентов",
@@ -40,7 +40,7 @@ const GuitarService = () => {
             display: 'none',
             class:'div5',
             service: 'main-service',
-            count:  <img alt='dddadsads' src='/public/Coins.png' />
+            count:  <img alt='dddadsads' src='Coins.png' />
         },
         {
             header: "Быстрая доставка по всей стране и удобный возврат",
@@ -48,7 +48,7 @@ const GuitarService = () => {
             display: 'none',
             class:'div6',
             service: 'main-service',
-            count:  <img alt='dddadsads' src='/public/Delivery.png' />
+            count:  <img alt='dddadsads' src='Delivery.png' />
         },
         {
             header: "Только проверенные бренды",
