@@ -72,10 +72,10 @@ const Navigation = () => {
                 </svg>
 
                 <div className="nav__navigation-links">
-                    <router-link to="/catalog"><p  className='link-router'>Каталог</p></router-link>
-                    <router-link to="/"><p  className='link-router'>Хит продаж</p></router-link>
-                    <router-link to="/about"><p  className='link-router'>О нас</p></router-link>
-                    <router-link to="/contact"><p  className='link-router'>Контакты</p></router-link>
+                    <router-link to="#/catalog"><p  className='link-router'>Каталог</p></router-link>
+                    <router-link to="#/"><p  className='link-router'>Хит продаж</p></router-link>
+                    <router-link to="#/about"><p  className='link-router'>О нас</p></router-link>
+                    <router-link to="#/contact"><p  className='link-router'>Контакты</p></router-link>
                 </div>
                 <div className="nav__navigation-users">
                     <a href="" className='nav__navigation-users-link'>
