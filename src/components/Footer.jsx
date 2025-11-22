@@ -1,4 +1,5 @@
  import '../styles/components/Footer.scss'
+ import {Link} from "react-router-dom";
 const Footer = () => {
     return (
         <footer className="footer-container">
@@ -14,9 +15,9 @@ const Footer = () => {
                 <nav className="footer-content">
                     <p className='footer-header'>Навигация</p>
                     <ul className='footer-text'>
-                        <li className='footer-text__desc'><router-link to="#/сatolog">Каталог</router-link></li>
-                        <li className='footer-text__desc'><router-link to="#/about">О нас</router-link></li>
-                        <li className='footer-text__desc'><router-link to="#/contact">Контакты</router-link></li>
+                        <li className='footer-text__desc'><Link to="Guitar-SP/#/сatolog">Каталог</Link></li>
+                        <li className='footer-text__desc'><Link to="Guitar-SP/#/about">О нас</Link></li>
+                        <li className='footer-text__desc'><Link to="Link/contact">Контакты</Link></li>
                     </ul>
                 </nav>
                 <div className="footer-content">
